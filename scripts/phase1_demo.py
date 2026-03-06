@@ -1,3 +1,4 @@
+import numpy as np
 import matplotlib.pyplot as plt
 from stoch.paths import simulate_geometric_brownian_motion
 
@@ -5,7 +6,7 @@ from stoch.paths import simulate_geometric_brownian_motion
 def main():
     T = 1.0
     n_steps = 252
-    n_paths = 10
+    n_paths = 100
     mu = 0.08
     sigma = 0.2
     S0 = 100.0
@@ -21,11 +22,12 @@ def main():
     )
 
     plt.figure(figsize=(10, 6))
-    plt.plot(t, S.T)
+    plt.plot(t, S.T, alpha=0.6)
     plt.xlabel("Time")
     plt.ylabel("Price")
     plt.title("Simulated Geometric Brownian Motion Paths")
     plt.grid(True)
+    plt.legend()
     plt.show()
 
 
