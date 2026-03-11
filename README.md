@@ -1,57 +1,140 @@
-# Stochastic Market Simulator & Risk Engine
+# Spectra
+
+Quantitative research framework for stochastic market modeling, empirical financial analysis, and volatility dynamics.
+
+---
 
 ## Overview
-This project implements a stochastic simulation engine for financial markets using Monte Carlo methods. 
-It focuses on modeling asset price dynamics, pricing derivatives, and analyzing portfolio risk.
 
-The goal is to build a production-style quantitative research tool with validated mathematical foundations and optimized performance.
+Spectra is a research environment for studying financial markets through stochastic processes and empirical data analysis.
 
-## Core Features (Planned)
-- Geometric Brownian Motion simulator
-- Monte Carlo option pricing
-- Portfolio risk analysis (VaR, CVaR)
-- Correlation modeling
-- Performance optimization
-- Visualization tools
+The project combines theoretical models from quantitative finance with real market data to explore how well classical assumptions describe actual market behavior.
+
+The system provides tools for:
+
+- stochastic price simulation
+- empirical return analysis
+- volatility modeling
+- volatility regime detection
+- statistical diagnostics
+
+The long-term goal is to develop a modular framework for exploring market dynamics, risk, and quantitative trading ideas.
+
+---
+
+## Current Capabilities
+
+### Stochastic Modeling
+
+- Brownian motion simulation
+- Geometric Brownian Motion (GBM)
+- analytical validation of stochastic models
+- Monte Carlo path generation
+
+### Empirical Market Analysis
+
+- historical market data ingestion
+- log return computation
+- return distribution diagnostics
+- Q-Q plots and fat-tail analysis
+
+### Volatility Analysis
+
+- rolling realized volatility
+- volatility clustering detection
+- volatility regime classification
+- GARCH(1,1) volatility modeling
+
+### Visualization
+
+Research scripts generate diagnostic plots including:
+
+- price dynamics
+- return distributions
+- volatility clustering
+- volatility regimes
+- GARCH volatility vs realized volatility
+
+### Engineering
+
+- modular architecture
+- reproducible research scripts
+- automated unit tests
+- validated mathematical implementations
+
+---
 
 ## Mathematical Foundations
+
 - Brownian Motion
+- Geometric Brownian Motion
 - Stochastic Differential Equations
-- Black-Scholes Model
-- Monte Carlo Integration
-- Risk Metrics
+- Volatility Clustering
+- GARCH Volatility Models
+- Statistical Diagnostics for Financial Time Series
 
-## Project Timeline (9 Weeks)
+---
 
-### Phase 1 (Weeks 1–2): Foundations
-- Brownian motion
-- Random walk simulation
-- GBM modeling
+## Research Questions
 
-### Phase 2 (Weeks 3–4): Derivatives
-- Black-Scholes
-- Option pricing
-- Error analysis
+Spectra is designed to explore questions such as:
 
-### Phase 3 (Weeks 5–6): Risk
-- Multi-asset simulation
-- VaR / CVaR
-- Correlation modeling
+- Do financial returns follow a normal distribution?
+- How persistent is volatility in financial markets?
+- Can volatility regimes be detected automatically?
+- How well do stochastic volatility models describe real markets?
+- Where do classical financial models break down?
 
-### Phase 4 (Weeks 7–8): Performance
-- Vectorization
-- Parallelization
-- Benchmarking
+---
 
-### Phase 5 (Week 9): Polish
-- Documentation
-- Reporting
-- Demo scripts
+## Project Roadmap
+
+Phase 1 — Stochastic Foundations  
+Brownian motion  
+Geometric Brownian motion  
+
+Phase 2 — Empirical Market Diagnostics  
+return distribution analysis  
+volatility clustering detection  
+volatility regime identification  
+
+Phase 3 — Volatility Modeling  
+GARCH volatility models  
+volatility persistence analysis  
+
+Phase 4 — Advanced Market Structure  
+Hurst exponent analysis  
+long-memory detection  
+fractional Brownian motion exploration  
+
+Phase 5 — Strategy Research  
+signal generation  
+backtesting framework  
+portfolio risk modeling  
+
+---
 
 ## Tech Stack
-- Python (NumPy, SciPy, Matplotlib)
-- Jupyter
-- Optional: C++ / Numba
+
+Python
+
+Core libraries:
+
+NumPy  
+SciPy  
+Pandas  
+Matplotlib  
+yfinance  
+pytest  
+
+Future performance improvements may include:
+
+Numba  
+JAX  
+Rust extensions  
+
+---
 
 ## Status
-Active development (Spring 2026)
+
+Active development (2026)
